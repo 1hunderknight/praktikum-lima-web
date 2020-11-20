@@ -1,0 +1,13 @@
+body{
+	font-family: sans-serif;
+}
+.container{
+	size: fixed;
+	background-image: url('../img/bg4.jpg');
+}
+h2{
+	font-size: 50px;
+	color: rgb(10,11,10);
+	font-family: Arial;
+
+}

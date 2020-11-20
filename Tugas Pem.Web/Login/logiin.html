@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOGIN</title>
+</head>
+<body style="margin: 200px">
+
+	<center>
+		<form method="REQUEST">
+			Username :<br/>
+			<input type="text" placeholder="username" id="username" name="username"><br/>
+			Password<br/>
+			<input type="password"  placeholder="password" id="password" name="password"><br/>
+			<button type="submit" onclick="return login()">SUBMIT</button>
+		</form>
+	</center>
+
+</body>
+<script type="text/javascript">
+	function login() {
+		username = document.getElementById("username").value;
+		password = document.getElementById("password").value;
+
+		if (username == "" || password == "") {
+			alert("Username / Password Should Not Be Empty");
+			return false;
+		}
+		else if (password.length < 6) {
+			alert("Password Less than 6");
+			return false;
+		}
+		else if (username == "koalaimut" && password == "koala24320") {
+			window.location = "login.html";
+			return false;
+		}else{
+			alert("Username / Your password is incorrect");
+		}
+	}
+</script>
+</html>

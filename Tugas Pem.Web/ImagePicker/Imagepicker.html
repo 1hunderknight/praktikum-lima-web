@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IMAGE PICKER</title>
+</head>
+<body style="margin: 200px">
+
+	<center>
+		<select onchange="gantigambar();" id="listgambar">
+			<option value="https://0.soompi.io/wp-content/uploads/2020/09/11080703/TWICE-4.jpg">PILIH MEMBER</option>
+			<option value="https://0.soompi.io/wp-content/uploads/2020/09/16200755/Jihyo-2.jpg">Jihyo</option>
+			<option value="https://0.soompi.io/wp-content/uploads/2020/09/12200244/nayeon.jpeg">Nayeon</option>
+			<option value="https://0.soompi.io/wp-content/uploads/2020/09/20200641/jeongyeon.jpeg">Jeongyeon</option>
+			<option value="https://0.soompi.io/wp-content/uploads/2020/09/19200623/momo.jpeg">Momo</option>
+			<option value="https://0.soompi.io/wp-content/uploads/2020/09/15201533/sana.jpeg">Sana</option>
+			<option value="https://0.soompi.io/wp-content/uploads/2020/09/18200403/twice-mina.jpeg">Mina</option>
+			<option value="https://0.soompi.io/wp-content/uploads/2020/09/17200314/dahyun.jpeg">Dahyun</option>
+			<option value="https://0.soompi.io/wp-content/uploads/2020/09/13200417/chaeyoung.jpeg">Chaeyoung</option>
+			<option value="https://0.soompi.io/wp-content/uploads/2020/09/14201025/tzuyu.jpeg">Tzuyu</option>
+		</select>
+	</center>
+		<br/>
+	<img src="https://0.soompi.io/wp-content/uploads/2020/09/11080703/TWICE-4.jpg" style="width: 100%" id="gambar">
+
+</body>
+<script type="text/javascript">
+	function gantigambar() {
+		let gambar = document.getElementById("listgambar").value;
+		document.getElementById("gambar").src = gambar;
+		alert("Ini Gambar " + gambar);
+	}
+</script>
+</html>
